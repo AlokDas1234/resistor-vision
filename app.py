@@ -29,7 +29,7 @@ tolerances = {
 # @st.cache_resource
 def load_model():
     from ultralytics import YOLO
-    return YOLO("model/best (9).pt")
+    return YOLO("https://drive.google.com/file/d/19VRbWUgU-bgWrExbwyVd2_GMYd6hEX4_/view?usp=drive_link")
 
 model = load_model()
 
