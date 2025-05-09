@@ -1,5 +1,5 @@
 import streamlit as st
-from ultralytics import YOLO
+
 from PIL import Image
 from io import BytesIO
 import base64
@@ -28,6 +28,7 @@ tolerances = {
 # Load model once
 # @st.cache_resource
 def load_model():
+    from ultralytics import YOLO
     return YOLO("model/best (9).pt")
 
 model = load_model()
